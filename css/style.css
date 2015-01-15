@@ -1,0 +1,111 @@
+html {
+background:url(../img/bg.png) center center fixed;
+background-size: cover;
+}
+#logo {
+margin-left:35%;
+padding-top:50px;
+}
+@media screen (min-width: 799px){
+	#content{
+		background-color: #f3f3f3;
+		margin-left:20%;
+		margin-right:20%;
+		border-radius:10px;
+		min-height:400px;
+		width: 750px;
+		border: 1 solid;
+		/*word-wrap: break-word;*/
+	}
+}
+
+#content{
+	-webkit-transition: all 500ms linear;
+	-moz-transition: all 500ms linear;
+	transition: all 500ms linear;
+	background-color: rgba(0, 0, 0, 0.45);
+	color: #fff;
+	margin-left:15%;
+	margin-right:20%;
+	border-radius:10px;
+	min-height:400px;
+	width: 960px;
+	border: 10px solid;
+		/*word-wrap: break-word;*/
+}
+#mainpage{
+	-webkit-transition: all 500ms linear;
+	-moz-transition: all 500ms linear;
+	transition: all 500ms linear;
+	background-color: rgba(0, 0, 0, 0.45);
+	color: #fff;
+	margin-left:15%;
+	margin-right:20%;
+	border-radius:10px;
+	min-height:400px;
+	width: 960px;
+		/*word-wrap: break-word;*/
+}
+#content table tr{
+background-color: #F9F9F9;
+}
+#mainpage table tr{
+background-color: #F9F9F9;
+}
+#footer{
+	background-color: rgba(0, 0, 0, 0.45);
+	margin-left:15%;
+	margin-right:20%;
+	border-radius:10px;
+	height:40px;
+	width: 960px;
+	border: 1 solid;
+}
+.maintext {
+padding-left:10px;
+padding-bottom:20px;
+font-family: "Times New Roman", Times, serif;
+font-size:17px;
+padding-right:15px;
+word-wrap: break-word;
+}
+#navb {
+z-index:9999999999999999999;
+background-color:rgba(0, 0, 0, 0.50);
+-webkit-transition: all 500ms linear;
+-moz-transition: all 500ms linear;
+transition: all 500ms linear;
+}
+#navitm:hover{
+-webkit-transition: all 500ms linear;
+-moz-transition: all 500ms linear;
+transition: all 500ms linear;
+background-color:#F8F8F8;
+color:#F8F8F8;
+border-radius:50%;
+}
+#activ{
+-webkit-transition: all 500ms linear;
+-moz-transition: all 500ms linear;
+transition: all 500ms linear;
+background-color:#F8F8F8;
+color:#F8F8F8;
+border-radius:50%;
+}
+li a {
+color:#966C4E;
+}
+.title{
+font-size:30px;
+/*font-family: "Comic Sans MS", cursive, sans-serif;*/
+
+}
+.footertext{
+color:steelblue;
+font-weight:900;
+font-size: 35px;
+}
+p.maintext:first-letter {
+font-size:150%;
+padding-left:15px;
+}
