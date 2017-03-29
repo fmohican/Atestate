@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Anatomie</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.mark.min.js"></script>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">I.L. - 12B</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Sistemele Osos & Muscular & Nervos <span class="sr-only">(current)</span></a></li>
+            <li><a href="endo.html">Sistemul Endocrin</a></li>
+          </ul>
+          <form class="navbar-form navbar-left">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Cauta in site" id="search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+      <div class="container-fluid">
+        <p class="navbar-text">&copy; Doina Nenescu - 2017 | Matematic&#259; Informatic&#259; | Ion Luca <i>Vatra Dornei</i></p>
+      </div>
+    </nav>
+    <script>
+    $(function() {
+      $("#search").on("input.highlight", function() {
+        var searchTerm = $(this).val();
+        $("html").unmark().mark(searchTerm);
+      }).trigger("input.highlight").focus();
+    });
+    </script>
+    <div class="container-fluid">
+      <div class="row">
+      <!-- Partea Stanca -->
+        <div class="col-md-6 mainl">
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Sistemul Osos
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  <img src="img/os.jpg"/>
+                 </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Sistemul Nervos
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                  <img src="img/nerv.jpg"/>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Sistemul Muscular
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                  <img src="img/musc.jpg"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Partea Dreapta -->
+        <div class="col-md-6 mainr">
+          <div class="panel-group" id="second" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#second" href="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
+                    Sistemul Osos
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  <h1 style="display:block;text-align: center;text-align:-webkit-center;">Sistemul Osos</h1>
+                  <p>Dup&#259; cum bine &#537;tim sistemul osos este alc&#259;tuit din totalitatea oaselor din corp, el este &icirc;mp&#259;r&#539;it &icirc;n c&acirc;teva regiuni mai semnificative cum ar fii:</p>
+                  <ul>
+                    <li><a data-toggle="modal" data-target="#cap">Cap ( Cutia craninan&#259; )</a></li>
+                    <li><a data-toggle="modal" data-target="#scap">Centura Scapular&#259;</a></li>
+                    <li><a data-toggle="modal" data-target="#sup">Membrele superioare</a></li>
+                    <li><a data-toggle="modal" data-target="#tora">Cutia toracic&#259;</a></li>
+                    <li><a data-toggle="modal" data-target="#vert">Coloana vertebral&#259;</a></li>
+                    <li><a data-toggle="modal" data-target="#pelv">Centura Pelvian&#259;</a></li>
+                    <li><a data-toggle="modal" data-target="#infe">Membrele inferioare</a></li>
+                  </ul>
+                 </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#second" href="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">
+                    Sistemul Nervos
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                  <h1 style="display:block;text-align: center;text-align:-webkit-center;">Sistemul Nervos</h1>
+                  <p>Sistemul nervos al omul coordoneaz&#259; activitatea mu&#537;chilor, monitorizeaz&#259; organele, prime&#537;te &#537;i prelucreaz&#259; informa&#539;iile primite prin organele de sim&#539; &#537;i ini&#539;iaz&#259; ac&#539;iuni. Cu alte cuvinte sistemul nervos este responsabil pentru men&#539;inerea homeostaziei (echilibrul intern al corpului).Elementele principale ale sistemului nervos sunt neuronii &#537;i celulele gliale (cu rol de sus&#539;inere &#537;i de protec&#539;ie).</p>
+                  <p>Elementul principal al sistemului nervos este &#539;esutul nervos, format din neuroni interconecta&#539;i prin axoni &#537;i dendrite. La organisme mai evoluate (de exemplu, omul) se &icirc;nt&acirc;lnesc &#537;i celule gliale, care sus&#539;in activitatea neuronilor f&#259;r&#259; a participa direct &icirc;n prelucrarea de informa&#539;ii. Sistemul nervos este format din:</p>
+                  <ul>
+                    <li><b>Sistemul nervos central (SNC)</b>
+                      <ul>
+                        <li><a data-toggle="modal" data-target="#enc">Encefal</a></li>
+                        <li><a data-toggle="modal" data-target="#spin">M&#259;duva spin&#259;rii</a></li>
+                      </ul>
+                    </li>
+                    <li><b>Sistemul nervos periferic (SNP)</b>
+                      <ul>
+                        <li><a data-toggle="modal" data-target="#sns">Sistemul nervos somatic</a></li>
+                        <li><a data-toggle="modal" data-target="#snv">Sistemul nervos vegetativ</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <p>Activitatea sistemului nervos se realizeaz&#259; prin actul reflex (procesul fiziologic de r&#259;spuns la un stimul care ac&#539;ioneaz&#259; asupra unui anumit c&acirc;mp receptor). A&#537;adar, la stimulii sosi&#539;i din mediul extern sau intern, sistemul nervos d&#259; un raspuns rapid &#537;i adecvat. Acest r&#259;spuns se nume&#537;te act reflex. Substratul s&#259;u anatomic este arcul reflex, constituit din receptor, calea aferent&#259;, centrul reflex, calea eferent&#259; &#537;i efectorul.</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#second" href="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                    Sistemul Muscular
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                  <h1 style="display:block;text-align: center;text-align:-webkit-center;">Sistemul Muscular</h1>
+                  <p>Sistemul muscular reprezint&#259; totalitatea mu&#537;chilor acestuia, cu ajutorul c&#259;rora se realizeaz&#259; locomo&#539;ia &#537;i alte func&#539;ii vitale (de exemplu mu&#537;chiul cardiac), form&acirc;nd &icirc;mpreun&#259; cu oasele de care sunt ata&#537;ate, aparatul locomotor.<br/>Este compus din:</p>
+                  <ul>
+                    <li>Mu&#537;chii capului &#537;i g&acirc;tului</li>
+                    <li>Musculatura trunchiului</li>
+                    <li>Mu&#537;chii membrelor
+                      <ul>
+                        <li>Mu&#537;chii membrului superior</li>
+                        <li>Mu&#537;chii membrului inferior</li>
+                      </ul>
+                    </li>
+                    <li>Mu&#537;chii stria&#539;i</li>
+                    <li>Mu&#537;chiul cardiac</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+<!-- Sistemul OSOS DETALII -->
+<!-- Cap -->
+<div class="modal fade" id="cap" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Cutia craninan&#259;</h4>
+      </div>
+      <div class="modal-body">
+        <img src="img/cap.jpg"/>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Centura Scapulara -->
+<div class="modal fade" id="scap" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Centura Scapular&#259;</h4>
+      </div>
+      <div class="modal-body">
+        <img src="img/centurascapulara.jpg"/>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Membrele superioare -->
+<div class="modal fade" id="sup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Membrele superioare</h4>
+      </div>
+      <div class="modal-body">
+        <img src="img/membrelesuperioare.jpg"/>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Cutia toracic -->
+<div class="modal fade" id="tora" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Cutia toracic&#259;</h4>
+      </div>
+      <div class="modal-body">
+        <img src="img/cutiatoracica.jpg"/>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Coloana vertebrala -->
+<div class="modal fade" id="vert" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Coloana vertebral&#259;</h4>
+      </div>
+      <div class="modal-body">
+        <img src="img/coloanavertebrala.jpg"/>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Cutia Pelvian&#259; -->
+<div class="modal fade" id="pelv" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Centura Pelvian&#259;</h4>
+      </div>
+      <div class="modal-body">
+        <img src="img/centurapelviana.jpg"/>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Membrele inferioare -->
+<div class="modal fade" id="infe" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Membrele inferioare</h4>
+      </div>
+      <div class="modal-body">
+        <img src="img/membreleinferioare.jpg"/>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Encefal -->
+<div class="modal fade" id="enc" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Encefal</h4>
+      </div>
+      <div class="modal-body">
+        <img src="img/encefal.jpg"/>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Maduva spinarii -->
+<div class="modal fade" id="spin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">M&#259;duva spin&#259;rii</h4>
+      </div>
+      <div class="modal-body">
+        <img src="img/maduvaspinarii.jpg"/>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Sistemul nervos somatic -->
+<div class="modal fade" id="sns" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Sistemul nervos somatic</h4>
+      </div>
+      <div class="modal-body">
+        <img src="img/snssiv.jpg"/>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Sistemul nervos vegetativ -->
+<div class="modal fade" id="snv" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Sistemul nervos vegetativ</h4>
+      </div>
+      <div class="modal-body">
+        <img src="img/snssiv.jpg"/>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+body { 
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background: url(../img/background.jpg) center center fixed;
+    background-size: cover;
+}
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.modal-body img{
+    width: 75%;
+    height: 75%;
+}
+ol>li {
+    font-weight:bold;
+    font-size:14px;
+}
+li ul {
+    font-weight: initial;
+    font-size: 12px;
+}
+.maintext {
+    font-size:14px;
+}
+.center {
+    display:block;
+    text-align: center;
+    text-align: -webkit-center;
+}
+.modal-body {
+    text-align: center;
+    text-align: -webkit-center;
+}
+.mainl {
+    background:white;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top: 4px double cyan;
+    border-left: 4px double cyan;
+    border-bottom: 4px double cyan;
+    border-radius: 5px;
+}
+.main {
+    background:white;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 4px double cyan;
+    border-radius: 5px;
+    background-color:white;
+}
+.panel-body img{
+    width:100%;
+    height:100%;
+}
+ul>li>a {
+    cursor: pointer;
+}
+.mainr {
+    background:white;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top: 4px double cyan;
+    border-right: 4px double cyan;
+    border-bottom: 4px double cyan;
+    border-radius: 5px;
+}
+mark {
+    text-decoration: underline;
+    color: #000;
+    background: #ff0;
+}
